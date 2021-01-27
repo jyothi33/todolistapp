@@ -1,38 +1,110 @@
-.App {
+* {
+  margin: 0;
+}
+
+body {
+  background: url("./images/ma1.jpg");
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h3 {
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  position: absolute;
+  height: 25pc;
+  width: 30pc;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 55px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addTxt {
+  position: absolute;
+  height: 5px;
+  width: 70%;
+  margin: auto;
+  top: 25px;
+  right: 0;
+  left: 0;
+  outline: none;
+  border: none;
+  padding: 20px;
+  padding-right: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+  position: absolute;
+  height: 75%;
+  width: 100%;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list::-webkit-scrollbar {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.element {
+  position: relative;
+  height: fit-content;
+  width: 55%;
+  margin: 15px;
+  right: 0;
+  text-align: left;
+  transition: 0.2s;
+  padding: 10px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  padding-right: 20px;
+  word-wrap: break-word;
+}
+
+.element:hover {
+  transform: scale(1.1);
+}
+
+strike {
+  color: green;
+}
+
+.tick {
+  padding-right: 10px;
+}
+
+.trash {
+  position: absolute;
+  margin: auto;
+  height: 50px;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  font-size: 20px;
+  fill: red;
+}
+
+.edit {
+  position: absolute;
+  margin: auto;
+  height: 50px;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  font-size: 20px;
+  fill: blue;
+}
+
+.save {
+  font-size: 20px;
 }
